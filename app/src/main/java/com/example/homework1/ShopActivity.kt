@@ -14,19 +14,16 @@ class ShopActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.apply {
-            // BMW-ს არჩევა და მომდევნო გვერდზე გადასვლა
+            // მანქანის არჩევა და მომდევნო გვერდზე გადასვლა
             cardBmw.setOnClickListener {
                 navigateTo("BMW M3 (F80 generation)", 38000.0, "bmw")
             }
-            // Mercedes-ის არჩევა და მომდევნო გვერდზე გადასვლა
             cardMercedes.setOnClickListener {
                 navigateTo("Mercedes-Benz CLA-Class", 46400.0, "mercedes")
             }
-            // Porsche-ის არჩევა და მომდევნო გვერდზე გადასვლა
             cardPorsche.setOnClickListener {
                 navigateTo("Porsche 911 GT3 RS", 189000.0, "porsche")
             }
-            // Ferrari-ს არჩევა და მომდევნო გვერდზე გადასვლა
             cardFerrari.setOnClickListener {
                 navigateTo("Ferrari 488 Spider", 260000.0, "ferrari")
             }
